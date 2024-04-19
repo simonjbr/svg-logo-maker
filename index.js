@@ -1,6 +1,7 @@
 // require necessary modules
 const inquirer = require('inquirer');
 
+// array of questions to pass to inquirer
 const questions = [
 	{
 		type: 'input',
