@@ -1,6 +1,6 @@
 // require necessary modules
 const inquirer = require('inquirer');
-const { Shape, Circle } = require('./lib/shapes');
+const { Shape, Circle, Triangle } = require('./lib/shapes');
 
 // array of questions to pass to inquirer
 const questions = [
@@ -29,3 +29,6 @@ const questions = [
 
 const circle = new Circle('CIR', 'white', 'circle', 'blue');
 console.log(circle.render());
+
+const triangle = new Triangle('TRI', 'white', 'triangle', 'blue');
+console.log(triangle.render());
