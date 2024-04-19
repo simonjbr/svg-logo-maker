@@ -1,5 +1,6 @@
 // require necessary modules
 const inquirer = require('inquirer');
+const { Shape, Circle } = require('./lib/shapes');
 
 // array of questions to pass to inquirer
 const questions = [
@@ -25,3 +26,6 @@ const questions = [
 		name: 'shapeColor',
 	},
 ];
+
+const circle = new Circle('CIR', 'white', 'circle', 'blue');
+console.log(circle.render());
