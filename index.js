@@ -27,11 +27,3 @@ const questions = [
 	},
 ];
 
-const circle = new Circle('CIR', 'white', 'circle', 'blue');
-console.log(circle.render());
-
-const triangle = new Triangle('TRI', 'white', 'triangle', 'blue');
-console.log(triangle.render());
-
-const square = new Square('SQU', 'white', 'square', 'blue');
-console.log(square.render());
