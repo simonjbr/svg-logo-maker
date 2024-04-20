@@ -1,6 +1,7 @@
 // require necessary modules
 const inquirer = require('inquirer');
-const { Shape, Circle, Triangle, Square } = require('./lib/shapes');
+const shapes = require('./lib/shapes');
+const fs = require('fs');
 
 // array of questions to pass to inquirer
 const questions = [
@@ -18,7 +19,7 @@ const questions = [
 		type: 'list',
 		message: 'Please choose the shape:',
 		name: 'shape',
-		choices: ['circle', 'triangle', 'square'],
+		choices: ['Circle', 'Triangle', 'Square'],
 	},
 	{
 		type: 'input',
@@ -27,3 +28,10 @@ const questions = [
 	},
 ];
 
+inquirer
+	.prompt(questions)
+	.then((res) => {
+		const shape = new shapes[res.shape](res.text, res.textColor, res.shape, res.shapeColor);
+
+		fs.writeFile(`./examples/${res.shape}.svg`, shape.render(), (error) => console.error(error));
+	});
