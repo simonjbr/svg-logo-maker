@@ -30,7 +30,7 @@ The user will then be prompted to enter the following information:
 Following this, the data will be injected in to a template and written to the file `/examples/{Shape}.svg`.
 
 Find the video walkthrough here:
-[Video Walkthrough](https://drive.google.com/file/d/1xcsfKPIh0h0wBQ_w5Nf2zNx_f3-3s9Ep/view)
+[Video Walkthrough](https://drive.google.com/file/d/1e4FuW-KXVQMYBnUDP5IQTcJokNQrX40x/view)
 
 Find the example .svg files here:
 - [Circle.svg](./examples/Circle.svg)

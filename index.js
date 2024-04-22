@@ -46,5 +46,8 @@ inquirer
 </svg>`
 
 		// write svg template to a .svg file
-		fs.writeFile(`./examples/${res.shape}.svg`, svg, (error) => console.error(error));
+		fs.writeFile(`./examples/logo.svg`, svg, (error) => console.error(error));
+	})
+	.then(() => {
+		console.log('Generated logo.svg');
 	});
